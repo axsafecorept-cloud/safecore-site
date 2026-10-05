@@ -139,7 +139,8 @@ header{position:sticky;top:0;z-index:20;background:rgba(9,21,34,.92);backdrop-fi
 .method figcaption b{display:block;font-family:var(--display);font-weight:600;font-size:18px}
 .method figcaption span{display:block;color:var(--muted);font-size:15.5px;margin-top:4px}
 .method-title{margin-top:72px;font-size:clamp(22px,2.4vw,28px)}
-.method-title + .method{margin-top:28px}
+.method-title + .lead{margin-top:10px}
+.method-title ~ .method{margin-top:28px}
 @media (max-width:860px){.method{grid-template-columns:1fr}}
 
 /* Empresas */
@@ -280,19 +281,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <li><h3>Diagnóstico e orçamento</h3><p>Diagnóstico de bancada (10 €) e orçamento final. Só reparamos depois da sua aprovação.</p></li>
     </ol>
 
-    <h3 class="method-title">Como diagnosticamos</h3>
+    <h3 class="method-title">Ferramentas de diagnóstico</h3>
+    <p class="lead">Cada avaria pede um método diferente. Estas são algumas das ferramentas que usamos, escolhidas conforme o problema do equipamento.</p>
     <div class="method">
       <figure>
         <img src="termografia.jpg" alt="Imagem de câmara térmica de uma placa ligada, com um ponto quente assinalado" loading="lazy" width="960" height="720">
-        <figcaption><b>Câmara térmica</b><span>Com a placa ligada, localizamos componentes a aquecer acima do normal.</span></figcaption>
+        <figcaption><b>Câmara térmica</b><span>Usada em casos de curto-circuito ou consumo anormal, para localizar o componente que aquece.</span></figcaption>
       </figure>
       <figure>
         <img src="microscopio-placa.jpg" alt="Zona de alimentação de uma placa vista ao microscópio digital" loading="lazy" width="960" height="720">
-        <figcaption><b>Microscópio digital</b><span>Inspeção da zona suspeita: soldas, pistas e componentes à volta.</span></figcaption>
+        <figcaption><b>Microscópio digital</b><span>Inspeção de soldas, pistas e componentes ao detalhe.</span></figcaption>
       </figure>
       <figure>
         <img src="microscopio-componente.jpg" alt="Circuito integrado identificado ao microscópio pela sua marcação" loading="lazy" width="960" height="720">
-        <figcaption><b>Identificação do componente</b><span>Confirmamos a referência exata antes de qualquer substituição.</span></figcaption>
+        <figcaption><b>Identificação do componente</b><span>Confirmamos a referência exata do componente antes de o substituir.</span></figcaption>
       </figure>
     </div>
   </div>
