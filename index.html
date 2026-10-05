@@ -91,12 +91,9 @@ header{position:sticky;top:0;z-index:20;background:rgba(9,21,34,.92);backdrop-fi
 
 /* Imagem de inspeção: o elemento de assinatura */
 .scope{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/5;background:var(--panel)}
-.scope img{width:100%;height:100%;object-fit:cover;object-position:50% 38%}
-.scope svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.scope img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
 .scope figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;font-size:13px;color:var(--paper);background:linear-gradient(transparent,rgba(9,21,34,.92))}
-.reticle-ring{animation:breathe 4s ease-in-out infinite}
-@keyframes breathe{0%,100%{opacity:.95}50%{opacity:.45}}
-@media (prefers-reduced-motion:reduce){.reticle-ring{animation:none}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 @media (max-width:900px){
   .hero-grid{grid-template-columns:1fr;gap:40px}
@@ -227,15 +224,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     </div>
 
     <figure class="scope" style="margin:0">
-      <img src="chip-hdmi.jpg" alt="Chip HDMI Panasonic MN864739 de uma PlayStation 5 visto ao microscópio digital" width="720" height="1280" fetchpriority="high">
-      <svg viewBox="0 0 100 125" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <g fill="none" stroke="#22d3e6" stroke-width=".5">
-          <circle class="reticle-ring" cx="50" cy="48" r="26"/>
-          <line x1="50" y1="12" x2="50" y2="28"/><line x1="50" y1="68" x2="50" y2="84"/>
-          <line x1="10" y1="48" x2="30" y2="48"/><line x1="70" y1="48" x2="90" y2="48"/>
-        </g>
-      </svg>
-      <figcaption>Chip HDMI de PS5 ao microscópio digital.</figcaption>
+      <img src="hero-bancada.jpg" alt="Diagnóstico de uma placa de Xbox com osciloscópio, multímetro e estação de solda" width="900" height="1600" fetchpriority="high">
+      <figcaption>Diagnóstico de placa de Xbox na bancada: osciloscópio, multímetro e estação de solda.</figcaption>
     </figure>
   </div>
 </section>
@@ -256,7 +246,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <p>Falhas de placa-mãe, porta HDMI, chip APU, leitura de disco e sobreaquecimento, em todas as gerações.</p>
       </article>
       <article class="service">
-        <img src="xbox.jpg" alt="Placa de Xbox One S em diagnóstico com osciloscópio" loading="lazy" width="720" height="1280">
+        <img src="xbox.jpg" alt="Placa de Xbox em diagnóstico com osciloscópio" loading="lazy" width="540" height="720">
         <h3>Xbox One e Series</h3>
         <p>Xbox One FAT, One S, Series S e Series X. Diagnóstico com osciloscópio, chips BGA, HDMI e arrefecimento.</p>
       </article>
